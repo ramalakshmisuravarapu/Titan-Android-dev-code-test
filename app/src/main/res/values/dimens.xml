@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">5dp</dimen>
+    <dimen name="elevation">20dp</dimen>
+    <dimen name="corner_radious">10dp</dimen>
+</resources>

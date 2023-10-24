@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:elevation="@dimen/elevation"
+    app:cardCornerRadius="@dimen/corner_radious"
+    android:layout_marginTop="@dimen/margin"
+    android:layout_marginBottom="@dimen/margin"
+    android:layout_marginStart="@dimen/margin"
+    android:layout_marginEnd="@dimen/margin">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/card_background">
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/task_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/delete_button"
+        app:layout_constraintStart_toEndOf="@id/check"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:background="@drawable/baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.09" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
